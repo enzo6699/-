@@ -1,0 +1,13 @@
+﻿# property configurator test file
+
+log4cpp.rootCategory=DEBUG,rootAppender,A1Appender
+
+log4cpp.appender.rootAppender=ConsoleAppender
+log4cpp.appender.rootAppender.layout=PatternLayout
+log4cpp.appender.rootAppender.layout.ConversionPattern=%d{%Y-%m-%d %H:%M:%S,%l} %p|%m%n
+
+log4cpp.appender.A1Appender=DailyRollingFileAppender
+log4cpp.appender.A1Appender.fileName=./logs/collectservice.log
+log4cpp.appender.A1Appender.maxDaysToKeep=90
+log4cpp.appender.A1Appender.layout=PatternLayout
+log4cpp.appender.A1Appender.layout.ConversionPattern=%d{%Y-%m-%d %H:%M:%S,%l} %p|%m%n

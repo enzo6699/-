@@ -1,0 +1,17 @@
+application.instanceId=app-hkfacecollect:72FA824699C0473dAB8F000B689CE4D4
+application.name=app-hkfacecollect
+http.timeout=8
+kafka.bmanualflush=false
+kafka.broker=192.168.2.202:9092
+kafka.topic=collect.req.topic.new
+listen.address=192.168.2.186
+listen.port=8100
+lts.capacity=5
+lts.heartbeatInterval=60
+lts.longpolingInterval=60
+lts.server.url=http://192.168.2.8:7009/
+metadatapath=./metadatapath/
+nginx.address=http://192.168.2.207/fvap/
+qualityThreshold=0.42
+min.face.width=80
+min.face.height=80

@@ -1,0 +1,6 @@
+授权辅助工具主要为：
+seetagether	用于收集信息，并生成请求凭证文件（seetatech_receipts）。
+seetaverify	用于读取凭证文件，进行试认证，需要读取的文件有公钥文件和凭证文件（seetatech_pub.key and seetatech_receipts_out）
+
+中科视拓
+2017年7月3日

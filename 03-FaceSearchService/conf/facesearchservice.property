@@ -1,0 +1,22 @@
+# sqlite本地文件路径
+facesearchservice.sqlite.dbfilename=./FACEINFO2.db
+
+# 抓拍数据保留时间（天）
+facesearchservice.sqlite.cache.days=90
+
+# 搜索抓拍库时，人脸质量阈值，低于此值的抓拍照片将不会被搜索到
+facesearchservice.qualityThreshold=0.45
+# 搜索抓拍库时，人脸比对阈值，低于此值的抓拍照片将不会被搜索到
+facesearchservice.compareThreshold=0.75
+
+# 本地监听地址和端口，默认监听端口8101
+facesearchservice.appender.listen.port=8201
+# http连接超时时间，默认超时时间8s
+facesearchservice.appender.http.timeout=8
+
+# kafka地址
+facesearchservice.kafka.broker=192.168.2.202:9092
+# kafka消息topic
+facesearchservice.kafka.topic=collect.req.topic.test
+# 启动多个实例时，请配置相同的group
+facesearchservice.kafka.group.id=FaceSearchService

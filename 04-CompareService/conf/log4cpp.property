@@ -1,0 +1,13 @@
+log4cpp.rootCategory=DEBUG, consoleAppender, A1Appender
+
+log4cpp.appender.A1Appender=DailyRollingFileAppender
+log4cpp.appender.A1Appender.fileName=logs/fcompare1n.log
+log4cpp.appender.A1Appender.maxDaysToKeep=180
+log4cpp.appender.A1Appender.layout=PatternLayout
+log4cpp.appender.A1Appender.layout.ConversionPattern=%d{%Y-%m-%d %H:%M:%S,%l} %p|%m%n
+
+log4cpp.appender.consoleAppender=ConsoleAppender
+log4cpp.appender.consoleAppender.layout=PatternLayout
+log4cpp.appender.consoleAppender.layout.ConversionPattern=%d{%Y-%m-%d %H:%M:%S,%l} %p|%m%n
+log4cpp.appender.consoleAppender.target=stderr
+

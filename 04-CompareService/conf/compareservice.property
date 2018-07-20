@@ -1,0 +1,29 @@
+
+# kafka服务地址
+kafka.broker=192.168.2.202:9092
+# kafka接收消息的topic，与CollectService的topic一致
+kafka.consumer.topic=collect.req.topic
+# kafka接收消息的group，无需修改
+kafka.consumer.group=CompareServiceGroup
+# kafka发送消息的topic
+kafka.producer.topic=compare.topic.har
+
+# 本机IP地址和接口服务监听端口
+listen.address=192.168.2.186
+listen.port=9090
+
+# 服务注册地址（FCompare1NSM的地址）
+register.url=http://192.168.2.6:8083/compareservice/taskRegister
+# 图片存储目录
+local.directory=./pictures
+# nginx地址
+nginx.address=http://192.168.2.186/fvap/
+
+# 比对阈值,影响：
+# 1, 高于此值产生布控警报及重点人员记录
+# 2, 布控人员库及重点人员库搜索时，高于此值才有结果返回 
+compareThreshold=0.75
+# 人脸质量阈值: 对于新增人员布控或者新增重点人员时，上传的照片质量低于此阈值将无法添加成功
+qualityThreshold=0.58
+# 人脸质量阈值: 针对布控警报（或重点人员抓拍）
+alarmQualityThreshold=0.42
